@@ -1,0 +1,74 @@
+:root{
+    --primary: #6366f1;
+    --bg: #f8fafc;
+    --text: #1e293b;
+    --danger: #ef4444;
+}
+
+body{
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.todo-container{
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+#todo-form{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"]{
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button#add-btn{
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    gap: 10px;
+}
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+.todo-item span {
+    flex-grow: 1;
+}
+.delete-btn {
+    background: none;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+    background: var(--danger);
+    color: white;
+}

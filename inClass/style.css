@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --linkedin-blue: #0A66C2;
+    --linkedin-blue-hover: #004182;
+    --linkedin-light: #EEF3F8;
+    --bg-white: #FFFFFF;
+    --text-dark: #191919;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+    --border-color: #E0E0E0;
+    --success-green: #057642;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: #F3F2EF;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    gap: 16px;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo-box{
+    background: var(--linkedin-blue);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.navbar input{
+    background: var(--linkedin-blue);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    flex: 1;
+}
+.nav-links{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+.nav-links a:hover{
+    color: var(--linkedin-light);
+}
+
+.btn-primary{
+    background: var(--linkedin-blue);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 28px;
+    text-decoration: none;
+    border: none;
+}
+.btn-outline{
+    border: 1px solid var(--linkedin-blue);
+    color: var(--linkedin-blue);
+    padding: 8px 16px;
+    border-radius: 28px;
+    background-color: white;
+}
+
+#hero{
+    display: flex;
+    padding: 60px 40px;
+    align-items: center;
+}
+.hero-text{
+    flex: 55%;
+}
+.hero-text h1{
+    font-size: 2.8rem;
+}
+.highlight{
+    color: #B24020;
+}
+.hero-form{
+    flex: 45%;
+}
+.hero-form form{
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.jobs-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+
+}

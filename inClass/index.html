@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LinkedIn Sign-In & Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Linked <span class = "logo-box">in</span>
+            </div>
+            <label for="search" class="visually-hidden">Search</label>
+            <input type="search" id="search" placeholder="Search jobs,people,companies">
+            <ul class = "nav-links">
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Learning</a></li>
+            </ul>
+            <div class="auth">
+                <a href="#" class="btn-outline">Join now</a>
+                <a href="#" class="btn-primary">Sign in</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id = hero>
+            <div class="hero-text">
+                <h1>Welcome to your <span class="highlight">professional</span> community</h1>
+            </div>
+            <div class="hero-form">
+                <form>
+                    <label for="email">Email or phone</label>
+                    <input type="email" id="email" placeholder="Email or phone" />
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" />
+
+                    <a href="#" class="forgot">Forgot password?</a>
+
+                    <button class="btn-primary">Sign in</button>
+
+                    <div class = divider>or</div>
+
+                    <button class="btn-outline">Join now</button>
+
+                    <hr />
+
+                    <button class="btn-social"><span>[G]</span>Continue with Google</button>
+                </form>
+            </div>
+        </section>
+        <section id = "jobs" class = "section">
+                <h2>Explore Jobs</h2>
+                <p class="subtitle">Find the right job or internship for you</p>
+                <div class = "filters">
+                    <a href="#" class="filter-btn-active">All</a>
+                    <a href="#" class="filter-btn">Remote</a>
+                    <a href="#" class="filter-btn">On-site</a>
+                    <a href="#" class="filter-btn">Hybrid</a>
+                </div>
+
+            <div class="jobs-grid">
+                <article class="job">
+                    <span class = "company">Google</span>
+                    <h3>Frontend Developer</h3>
+                    <div class="row">
+                        <p class="location"></p>
+                        <p class=""></p>
+                    </div>
+                    <div class=""></div>
+                </article>
+            </div>
+
+
+        </section>
+
+
+
+
+
+    </main>
+</body>
+</html>
